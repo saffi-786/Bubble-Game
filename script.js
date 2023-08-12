@@ -36,6 +36,9 @@ function runTimer(){
 }
 
 document.querySelector('#pbtm').addEventListener('click', function(details){
+    var sound = new Audio('drop.mp3');
+    sound.play();
+    
     var currentHit = Number(details.target.textContent);
 
     if(currentHit === hitrn) {
