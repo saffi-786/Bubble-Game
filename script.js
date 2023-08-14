@@ -65,9 +65,9 @@ function runTimer() {
       clearInterval(timeRunner);
       document.querySelector(
         "#pbtm"
-      ).innerHTML = `<h1 style="color: rgb(90, 126, 90);">GAME OVER</h1>`;
+      ).innerHTML = `<h1 style="color: rgb(180, 31, 135);">GAME OVER</h1>`;
     }
-  }, 500);
+  }, 1000);
 }
 
 document.querySelector("#pbtm").addEventListener("click", function (details) {
