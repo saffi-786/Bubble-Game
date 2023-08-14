@@ -17,8 +17,40 @@ function getNewHit() {
 function makeBubble() {
   var clutter = "";
 
-  for (var i = 0; i < 112; i++) {
-    clutter += `<div class="bubble">${Math.floor(Math.random() * 10)}</div>`;
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(104, 21, 104)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(71, 7, 117)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(8, 8, 163)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(19, 114, 19)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(190, 190, 4)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:rgb(246, 162, 5)" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
+  }
+  for (var i = 0; i < 16; i++) {
+    clutter += `<div style="background-color:red" class="bubble">${Math.floor(
+      Math.random() * 10
+    )}</div>`;
   }
 
   document.querySelector("#pbtm").innerHTML = clutter;
@@ -35,7 +67,7 @@ function runTimer() {
         "#pbtm"
       ).innerHTML = `<h1 style="color: rgb(90, 126, 90);">GAME OVER</h1>`;
     }
-  }, 1000);
+  }, 500);
 }
 
 document.querySelector("#pbtm").addEventListener("click", function (details) {
