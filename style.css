@@ -16,8 +16,7 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  /* background-color: rgb(180, 218, 180); */
-  background-image: url('bg-1.jpg');
+  background-image: url("bg-1.jpg");
   background-size: cover;
   font-family: "Courier New", Courier, monospace;
 }
@@ -28,6 +27,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  background-color: beige;
 }
 
 #ptop {
@@ -37,7 +37,6 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 80px;
-  /* background-color: rgb(90, 126, 90); */
   background-image: url(https://plus.unsplash.com/premium_photo-1670157709475-804e923487fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q09MT1VSU3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60);
   background-size: cover;
   color: #fff;
