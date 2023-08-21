@@ -1,5 +1,5 @@
 # Bubble-Game
-<a href="https://whimsical-souffle-1edd46.netlify.app/">Click Here</a>
+<a href="https://whimsical-souffle-1edd46.netlify.app/">Preview</a>
 
 <h1>A fun and interesting game of bubbles.</h1>
 
