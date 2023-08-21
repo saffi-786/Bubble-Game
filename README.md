@@ -9,7 +9,5 @@
 
 <h3>Used Tech Stacks -</h3>
 
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript.</span>
+<p>HTML, CSS, JavaScript</p>
  
