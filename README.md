@@ -5,7 +5,10 @@
 
 <h3>Functionalities -</h3>
 
-<p>It shows a set of random bubbles and a hit number to be hit by the player to get points. The player gets 10 points everytime he/she selects the bubble with the target hit number written on it. The game will be open for 60 seconds only. The user has to score as much points in those 60 seconds.</p>
+<p>•    It shows a set of random bubbles and a hit number to be hit by the player to get points.</p>
+<p>•	The player gets 10 points every time he/she selects the bubble with the target hit number written on it. </p>
+<p>•	The game will be open for 60 seconds only.</p>
+<p>•	The user has to score as many points as possible in those 60 seconds.</p>
 
 <h3>Used Tech Stacks -</h3>
 
