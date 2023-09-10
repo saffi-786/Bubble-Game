@@ -1,3 +1,37 @@
+const intro = introJs();
+intro.setOptions({
+  steps: [
+    {
+      title: "Welcome to the Game! 🎉",
+      intro: "Let's take a quick tour!",
+    },
+    {
+      title: "Hit Box 🎯",
+      element: ".hit-box",
+      intro: "This shows the target number you need to hit!",
+    },
+    {
+      title: "Timer Box ⌛",
+      element: ".timer-box",
+      intro: "This shows the time left in the game!",
+    },
+    {
+      title: "Score Box 💯",
+      element: ".score-box",
+      intro: "This shows the current score!",
+    },
+    {
+      title: "Bubbles Area 🫧",
+      element: "#pbtm",
+      intro:
+        "This is the clickable area where you can click on bubbles and score.",
+    },
+    {
+      title: "Tour's Over!",
+      intro: "Let's Play!👍",
+    },
+  ],
+});
 var timer = 60;
 var score = 0;
 var hitrn = 0;
@@ -57,6 +91,7 @@ function makeBubble() {
 }
 
 function runTimer() {
+  // timer.resume();
   var timeRunner = setInterval(function () {
     if (timer > 0) {
       timer--;
@@ -83,6 +118,7 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
   }
 });
 
-runTimer();
+intro.start();
 makeBubble();
 getNewHit();
+runTimer();
