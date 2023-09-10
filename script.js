@@ -91,7 +91,6 @@ function makeBubble() {
 }
 
 function runTimer() {
-  // timer.resume();
   var timeRunner = setInterval(function () {
     if (timer > 0) {
       timer--;
