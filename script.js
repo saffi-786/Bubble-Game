@@ -32,6 +32,7 @@ intro.setOptions({
     },
   ],
 });
+intro.start();
 var timer = 60;
 var score = 0;
 var hitrn = 0;
@@ -116,8 +117,15 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
     wrongBubble.play();
   }
 });
-
-intro.start();
 makeBubble();
 getNewHit();
 runTimer();
+function myFunction() {
+  resetTimer();
+}
+
+let chopa = setTimeout(myFunction, 20000);
+function resetTimer() {
+  clearTimeout(chopa);
+  timer=61;
+}
