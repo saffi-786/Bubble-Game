@@ -128,5 +128,8 @@ function myFunction() {
 let chopa = setTimeout(myFunction, 20000);
 function resetTimer() {
   clearTimeout(chopa);
+  document.querySelector("#scoreVal").textContent = 0;
   timer=61;
+  score=0;
+  getNewHit();
 }
