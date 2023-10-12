@@ -1,3 +1,4 @@
+alert("You will have 20 seconds for the intro of the page");
 const intro = introJs();
 intro.setOptions({
   steps: [
