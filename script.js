@@ -1,3 +1,4 @@
+alert("You will have 20 seconds for the intro of the page");
 const intro = introJs();
 intro.setOptions({
   steps: [
@@ -32,9 +33,7 @@ intro.setOptions({
     },
   ],
 });
-
 intro.start();
-
 var timer = 60;
 var score = 0;
 var hitrn = 0;
@@ -119,7 +118,18 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
     wrongBubble.play();
   }
 });
-
-runTimer();
 makeBubble();
 getNewHit();
+runTimer();
+function myFunction() {
+  resetTimer();
+}
+
+let chopa = setTimeout(myFunction, 20000);
+function resetTimer() {
+  clearTimeout(chopa);
+  document.querySelector("#scoreVal").textContent = 0;
+  timer=61;
+  score=0;
+  getNewHit();
+}
